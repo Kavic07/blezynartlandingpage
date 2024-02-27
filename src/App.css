@@ -1,38 +1,612 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Navbar starts here */
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav > .wrapper > .logo > img {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  padding-left: 1em;
+}
+
+nav > .wrapper > ul {
+  display: flex;
+}
+
+nav > .wrapper > ul > li {
+  list-style-type: none;
+}
+
+nav > .wrapper > ul > li:hover {
+  /* transform: rotate(360deg); */
+  animation: shake 0.5s;
+  color: brown;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav > .wrapper > ul > li > a {
+  text-decoration: none;
+  font-size: 10px;
+  color: antiquewhite;
+  padding-right: 2em;
+  font-family: sans-serif;
+}
+
+nav > .wrapper > ul > li > a > span {
+  text-decoration: none;
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav > .wrapper > ul > li > a:hover {
+  color: brown;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  color: bisque;
+  padding-right: 1em;
+}
+/* Navbar ends here */
+
+/* the hero-section starts here */
+.hero-section {
+  background-image: url("../public/images/hero-pic4.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  width: 100%;
+  height: 700px;
+  padding-top: 10em;
+  padding-left: 2.5em;
+}
+
+.hero-section > h1 {
+  color: bisque;
+  font-size: 90px;
+  font-family: sans-serif;
+  line-height: 0.9em;
+  text-shadow: 7px 3px 5px black;
+}
+
+.hero-section > p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.hero-section > a {
+  background-color: beige;
+  color: brown;
+  border: 2px solid grey;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: oblique;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.hero-section > a:hover {
+  color: maroon;
+  background: transparent;
+  box-shadow: 0 0 10px 5px maroon;
+}
+/* Hero-section ends here */
+
+/* About-section starts here */
+.about-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-top: 2.5em; */
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-image: url("../public/images/hero-pic7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.9; */
+}
+
+.about-img > img {
+  width: 500px;
+  height: 550px;
+  /* padding-left: 3em; */
+}
+
+.about-content {
+  width: 500px;
+  /* height: 480px; */
+}
+
+.about-content > h3 {
+  color: maroon;
+  padding-bottom: 1em;
+}
+
+.about-content > h4 {
+  font-size: 40px;
+  color: antiquewhite;
+}
+
+.about-content > p {
+  line-height: 1.6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: aqua;
+}
+/* About-section ends here */
+
+/* services section starts here */
+.service-section {
+  background-image: url("../public/images/service-pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: 2.5em; */
+  padding: 5em;
+}
+
+.service-content {
+  text-align: center;
+}
+
+.service-content > h3 {
+  font-size: 40px;
+  color: aqua;
+  padding-bottom: 0.5em;
+}
+
+.service-content > p {
+  color: white;
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-size: 18px; */
+}
+
+.service-section > h4 {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  color: maroon;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px maroon, 0 0 20px maroon,
+      0 0 25px maroon, 0 0 30px maroon, 0 0 35px maroon;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    text-shadow: 0 0 6px #fff, 0 0 12px maroon, 0 0 18px maroon, 0 0 24px maroon,
+      0 0 30px maroon, 0 0 36px maroon, 0 0 42px maroon;
   }
+  100% {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px maroon, 0 0 4px maroon,
+      0 0 5px maroon, 0 0 6px maroon, 0 0 7px maroon;
+  }
+}
+
+.service-section > .service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: auto;
+}
+
+.service-list > .list-content {
+  flex: 1 0 calc(50% - 16px);
+}
+
+.service-list > .semilist-content {
+  padding-left: 3.5em;
+}
+
+.list-content > h3 {
+  color: aqua;
+  font-size: 20px;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.list-content > p {
+  color: white;
+}
+/* service-section ends here */
+
+/* media-gallery starts here */
+.sale-section {
+  /* margin-top: 2.5em; */
+  padding-top: 3em;
+  padding-bottom: 2em;
+  background-color: black;
+}
+
+.sale-section > .sale-content {
+  text-align: center;
+  font-size: 20px;
+}
+
+.sale-section > .sale-content > h2 {
+  color: maroon;
+}
+
+.sale-section > .sale-content > p {
+  font-weight: bold;
+  color: aqua;
+  padding-bottom: 1.5em;
+}
+
+.sale-section > .sale-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  transition: box-shadow 0.3s ease;
+}
+
+.sale-section > .sale-img > #sale-img > a:hover {
+  box-shadow: 0 10px 10px 3px rgba(255, 255, 0, 0.7);
+}
+
+.flexImage {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2em 2em 0 2em;
+  border-radius: 10px;
+}
+
+.image12 {
+  width: 350px;
+  height: 400px;
+}
+
+.image7 {
+  width: 350px;
+  height: 400px;
+}
+
+.image8 {
+  width: 350px;
+  height: 400px;
+}
+
+.sale-section > .sale-img > #sale-img > h5 {
+  color: white;
+  text-align: center;
+}
+
+.sale-section > .sale-img > #sale-img > p {
+  color: grey;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sale-section > .btn {
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sale-section > .btn > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.sale-section > .btn > a:hover {
+  color: maroon;
+  font-style: italic;
+}
+
+.sale-section > .sale-paragraph {
+  margin-left: 4em;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: bisque;
+}
+
+.sale-section > .sale-paragraph > p > span > a > .media-icon {
+  color: maroon;
+  padding-left: 0.6em;
+}
+
+.sale-section > .sale-paragraph > p > span > a:hover {
+  font-size: 35px;
+}
+/* media-gallery section ends here */
+
+/* media-gallery2 section starts here */
+.sale-page {
+  padding-top: 5em;
+  padding-bottom: 2em;
+  background-color: black;
+}
+
+.sale-page > #sale-page {
+  text-align: center;
+  font-size: 20px;
+}
+
+.sale-page > #sale-page > h2 {
+  color: maroon;
+}
+
+.sale-page > #sale-page > p {
+  font-weight: bold;
+  color: aqua;
+  padding-bottom: 1.5em;
+}
+
+.sale-page > .arts-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*Set three columns */
+  grid-auto-rows: 450px; /*Set the height of each row */
+  grid-gap: 30px;
+  text-align: left;
+  padding-top: 1.5em;
+  margin-left: 3em;
+}
+
+.sale-page > .arts-gallery > #arts-gallery > a > img {
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.sale-page > .arts-gallery > #arts-gallery > a:hover {
+  box-shadow: 0 0 10px 3px rgba(255, 255, 0, 0.7);
+}
+
+.sale-page > .arts-gallery > #arts-gallery > h5 {
+  color: white;
+  padding-left: 1em;
+}
+
+.sale-page > .arts-gallery > #arts-gallery > p {
+  color: grey;
+  font-size: 15px;
+  padding-left: 1em;
+}
+
+.sale-page > .sale-paragraph {
+  margin-left: 2em;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1em;
+  display: inline-block;
+  color: bisque;
+}
+
+.sale-page > .sale-paragraph > p > span > a:hover {
+  font-size: 35px;
+}
+
+.sale-page > .sale-paragraph > p > span > a > .media-icon {
+  color: maroon;
+  padding-left: 0.6em;
+}
+/* media-gallery2 section ends here */
+
+/* contact section starts here */
+.contact-section {
+  display: flex;
+  justify-content: last baseline;
+  align-items: center;
+  margin: 0.1em;
+  padding: 5em 3em 5em;
+  background-color: black;
+  color: white;
+}
+.contact-section > .contact-img > img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-left: 2em;
+}
+.contact-section > .contact-content > .contact-paragraph {
+  font-size: 20px;
+  padding-bottom: 2em;
+  padding-left: 5em;
+}
+.contact-section > .contact-content > .contact-paragraph > h1 {
+  color: maroon;
+}
+.contact-section > .contact-content > .contact-paragraph > p {
+  padding-left: 2em;
+  font-family: URW Chancery L, cursive;
+  font-style: italic;
+  color: bisque;
+}
+.contact-form > form {
+  padding-left: 15em;
+}
+.contact-form > form > #contact-form > span > label {
+  margin-right: 2.9em;
+  color: aqua;
+  font-family: URW Chancery L, cursive;
+  font-style: italic;
+}
+.contact-form > form > #contact-form > span > input {
+  margin-left: 3.8em;
+  padding-left: 8em;
+}
+.contact-form > form > #contact-form > label {
+  color: aqua;
+  font-family: URW Chancery L, cursive;
+  font-style: italic;
+}
+.contact-form > form > #contact-form > input {
+  margin-bottom: 2em;
+  padding-left: 8em;
+}
+.contact-form > form > #contact-form > textarea {
+  margin-top: 2em;
+}
+.contact-form > form > #contact-form > textarea {
+  margin-left: 2em;
+}
+.contact-form > form > #contact-form > button {
+  margin-top: 1.5em;
+  border: 5em;
+  cursor: pointer;
+  font-size: 14px;
+  background-image: linear-gradient(45deg, bisque, aqua);
+  padding: 0.3em 1.5em;
+  border-radius: 65px;
+  color: maroon;
+}
+button:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+button:hover.text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
+/* media query starts here */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*tablets/laptop view*/
+  .about-section {
+    display: block;
+    text-align: center;
+  }
+  .about-content {
+    margin: auto;
+    padding-top: 3em;
+  }
+  .sale-img {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /*Tablet/iPads view*/
+  .sale-page > .arts-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*Set three columns */
+    grid-gap: 25px;
+    margin: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*Mobile view*/
+  nav > .wrapper > ul {
+    display: none;
+    flex-direction: column;
+  }
+  nav > .wrapper > ul.show {
+    display: flex;
+  }
+  nav > .wrapper > ul.show > li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .hero-section {
+    padding-right: 1em;
+  }
+  .hero-section > h1 {
+    font-size: 50px;
+  }
+
+  /* about-section media query starts here */
+  .about-section {
+    display: block;
+    padding-left: 1em;
+  }
+  .about-img > img {
+    width: 350px;
+    height: 400px;
+  }
+  .about-content {
+    width: 360px;
+    padding-top: 2em;
+  }
+  /* about-section media query ends here */
+
+  /* media-gallery-section media query starts here */
+  #sale-img {
+    display: block;
+  }
+  .sale-section {
+    margin: auto;
+  }
+  .flexImage {
+    margin: 1em;
+  }
+  /* media-gallery-section media query starts here */
+
+  /* media-gallery2-section media query starts here */
+  .sale-page > .arts-gallery {
+    /* display: block;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 1.5em; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /*Set three columns */
+    grid-gap: 25px;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1.5em;
+  }
+  .sale-page > .arts-gallery > #art-gallery {
+    margin-bottom: 7em;
+  }
+
+  /* media-gallery2-section media query ends here */
 }
