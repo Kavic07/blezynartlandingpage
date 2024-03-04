@@ -304,7 +304,7 @@ nav > .wrapper > ul > li > a:hover {
   height: 400px;
 }
 
-.image8 {
+.image10 {
   width: 350px;
   height: 400px;
 }
@@ -466,49 +466,10 @@ nav > .wrapper > ul > li > a:hover {
   font-style: italic;
   color: bisque;
 }
-.contact-form > form {
-  padding-left: 15em;
+.contact-section > .contact-content > .contact-paragraph > p > a > img {
+  width: 300px;
 }
-.contact-form > form > #contact-form > span > label {
-  margin-right: 2.9em;
-  color: aqua;
-  font-family: URW Chancery L, cursive;
-  font-style: italic;
-}
-.contact-form > form > #contact-form > span > input {
-  margin-left: 3.8em;
-}
-.contact-form > form > #contact-form > label {
-  color: aqua;
-  font-family: URW Chancery L, cursive;
-  font-style: italic;
-}
-.contact-form > form > #contact-form > input {
-  margin-bottom: 2em;
-}
-.contact-form > form > #contact-form > textarea {
-  margin-top: 2em;
-}
-.contact-form > form > #contact-form > textarea {
-  margin-left: 2em;
-}
-.contact-form > form > #contact-form > button {
-  margin-top: 1.5em;
-  border: 5em;
-  cursor: pointer;
-  font-size: 14px;
-  background-image: linear-gradient(45deg, bisque, aqua);
-  padding: 0.3em 1.5em;
-  border-radius: 65px;
-  color: maroon;
-}
-button:hover {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-}
-button:hover.text {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-}
+
 /* media query starts here */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /*tablets/laptop view*/
@@ -544,15 +505,8 @@ button:hover.text {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /* margin-left: 1em; */
   }
   .contact-section > .contact-content > .contact-paragraph {
-    /* padding-left: 2em;
-    padding-top: 1em; */
-    margin: auto;
-  }
-  .contact-form > form {
-    /* padding-left: 2em; */
     margin: auto;
   }
   /* contact-section media query ends here */
@@ -630,6 +584,7 @@ button:hover.text {
   .contact-section {
     display: block;
     margin: auto;
+    padding-bottom: 1em;
   }
   .contact-section > .contact-img > img {
     width: 200px;
@@ -638,11 +593,12 @@ button:hover.text {
     /* margin-left: 1em; */
   }
   .contact-section > .contact-content > .contact-paragraph {
-    padding-left: 2em;
+    padding-left: 0.2em;
     padding-top: 1em;
   }
-  .contact-form > form {
-    padding-left: 2em;
+  .contact-section > .contact-content > .contact-paragraph > p > a > img {
+    margin-left: 0.1em;
+    width: 250px;
   }
-  /* contact-section media query ends here */
 }
+/* contact-section media query ends here */

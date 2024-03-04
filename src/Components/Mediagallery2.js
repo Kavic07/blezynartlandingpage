@@ -19,7 +19,7 @@ const Mediagallery2 = () => {
               <img src="./images/media.jpeg" alt="media1" />
             </Link>
             <h5>Family Bond</h5>
-            <p>N30,000</p>
+            <p>$30.00</p>
           </div>
 
           <div id="arts-gallery">
@@ -27,15 +27,15 @@ const Mediagallery2 = () => {
               <img src="./images/media2.jpg" alt="media2" />
             </Link>
             <h5>In My Skin</h5>
-            <p>N30,000</p>
+            <p>$16.00</p>
           </div>
 
           <div id="arts-gallery">
             <Link to="https://wa.me/message/5E5B6OUQI55UG1">
               <img src="./images/about-pic.jpeg" alt="media3" />
             </Link>
-            <h5>Family Bond</h5>
-            <p>N30,000</p>
+            <h5>Childhood Bond</h5>
+            <p>$45.00</p>
           </div>
 
           <div id="arts-gallery">
@@ -43,7 +43,7 @@ const Mediagallery2 = () => {
               <img src="./images/media4.jpg" alt="media4" />
             </Link>
             <h5>Mild Happiness</h5>
-            <p>N45,000</p>
+            <p>Sold</p>
           </div>
 
           <div id="arts-gallery">
@@ -51,15 +51,15 @@ const Mediagallery2 = () => {
               <img src="./images/media5.jpg" alt="media5" />
             </Link>
             <h5>Anitode</h5>
-            <p>N30,000</p>
+            <p>$112.00</p>
           </div>
 
           <div id="arts-gallery">
             <Link to="https://wa.me/message/5E5B6OUQI55UG1">
               <img src="./images/media6.jpg" alt="media6" />
             </Link>
-            <h5>Family Bond</h5>
-            <p>N30,000</p>
+            <h5>Exquisity</h5>
+            <p>Sold</p>
           </div>
 
           <div id="arts-gallery">
@@ -67,7 +67,7 @@ const Mediagallery2 = () => {
               <img src="./images/media7.jpg" alt="media7" />
             </Link>
             <h5>Hidden</h5>
-            <p>N30,000</p>
+            <p>$107.00</p>
           </div>
 
           <div id="arts-gallery">
@@ -75,31 +75,31 @@ const Mediagallery2 = () => {
               <img src="./images/media8.jpg" alt="media8" />
             </Link>
             <h5>Behind Closed Eyes</h5>
-            <p>N30,000</p>
+            <p>Sold</p>
           </div>
 
           <div id="arts-gallery">
             <Link to="https://wa.me/message/5E5B6OUQI55UG1">
               <img src="./images/media9.jpg" alt="media9" />
             </Link>
-            <h5>Family Bond</h5>
-            <p>N30,000</p>
+            <h5>Inner Beauty</h5>
+            <p>$37.00</p>
           </div>
 
           <div id="arts-gallery">
             <Link to="https://wa.me/message/5E5B6OUQI55UG1">
               <img src="./images/media10.jpg" alt="media10" />
             </Link>
-            <h5>Family Bond</h5>
-            <p>N30,000</p>
+            <h5>My Skin is not a Crime</h5>
+            <p>$84.00</p>
           </div>
 
           <div id="arts-gallery">
             <Link to="https://wa.me/message/5E5B6OUQI55UG1">
               <img src="./images/media11.jpg" alt="media11" />
             </Link>
-            <h5>Family Bond</h5>
-            <p>N30,000</p>
+            <h5>Brotherhood</h5>
+            <p>Sold</p>
           </div>
 
           <div id="arts-gallery">
@@ -107,7 +107,7 @@ const Mediagallery2 = () => {
               <img src="./images/media12.jpeg" alt="media12" />
             </Link>
             <h5>Entangled</h5>
-            <p>N30,000</p>
+            <p>$88.00</p>
           </div>
         </div>
 

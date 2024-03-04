@@ -23,7 +23,7 @@ const Mediagallery = () => {
               />
             </Link>
             <h5>Entangled</h5>
-            <p>N30,000</p>
+            <p>N88.00</p>
           </div>
 
           <div id="sale-img">
@@ -35,19 +35,19 @@ const Mediagallery = () => {
               />
             </Link>
             <h5>Hidden</h5>
-            <p>N30,000</p>
+            <p>$111.000</p>
           </div>
 
           <div id="sale-img">
             <Link to="https://wa.me/message/5E5B6OUQI55UG1">
               <img
-                src="./images/media8.jpg"
+                src="./images/media10.jpg"
                 alt="artwork8"
-                className="flexImage image8"
+                className="flexImage image10"
               />
             </Link>
-            <h5>Behind Closed Eyes</h5>
-            <p>N30,000</p>
+            <h5>My Skin is not a Crime</h5>
+            <p>$84.00</p>
           </div>
         </div>
 
