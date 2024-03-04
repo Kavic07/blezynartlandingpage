@@ -255,7 +255,6 @@ nav > .wrapper > ul > li > a:hover {
 
 /* media-gallery starts here */
 .sale-section {
-  /* margin-top: 2.5em; */
   padding-top: 3em;
   padding-bottom: 2em;
   background-color: black;
@@ -478,7 +477,6 @@ nav > .wrapper > ul > li > a:hover {
 }
 .contact-form > form > #contact-form > span > input {
   margin-left: 3.8em;
-  padding-left: 8em;
 }
 .contact-form > form > #contact-form > label {
   color: aqua;
@@ -487,7 +485,6 @@ nav > .wrapper > ul > li > a:hover {
 }
 .contact-form > form > #contact-form > input {
   margin-bottom: 2em;
-  padding-left: 8em;
 }
 .contact-form > form > #contact-form > textarea {
   margin-top: 2em;
@@ -538,6 +535,27 @@ button:hover.text {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
+  /* contact-section media query starts here */
+  .contact-section {
+    display: block;
+    margin: auto;
+  }
+  .contact-section > .contact-img > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* margin-left: 1em; */
+  }
+  .contact-section > .contact-content > .contact-paragraph {
+    /* padding-left: 2em;
+    padding-top: 1em; */
+    margin: auto;
+  }
+  .contact-form > form {
+    /* padding-left: 2em; */
+    margin: auto;
+  }
+  /* contact-section media query ends here */
 }
 
 @media screen and (max-width: 480px) {
@@ -579,11 +597,14 @@ button:hover.text {
   /* about-section media query ends here */
 
   /* media-gallery-section media query starts here */
-  #sale-img {
-    display: block;
-  }
-  .sale-section {
+  .sale-section > .sale-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /*Set three columns */
+    grid-gap: 25px;
     margin: auto;
+  }
+  .sale-section > .btn {
+    margin-top: 2em;
   }
   .flexImage {
     margin: 1em;
@@ -592,10 +613,6 @@ button:hover.text {
 
   /* media-gallery2-section media query starts here */
   .sale-page > .arts-gallery {
-    /* display: block;
-  margin: auto;
-  text-align: center;
-  padding-bottom: 1.5em; */
     display: grid;
     grid-template-columns: repeat(1, 1fr); /*Set three columns */
     grid-gap: 25px;
@@ -607,6 +624,25 @@ button:hover.text {
   .sale-page > .arts-gallery > #art-gallery {
     margin-bottom: 7em;
   }
-
   /* media-gallery2-section media query ends here */
+
+  /* contact-section media query starts here */
+  .contact-section {
+    display: block;
+    margin: auto;
+  }
+  .contact-section > .contact-img > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* margin-left: 1em; */
+  }
+  .contact-section > .contact-content > .contact-paragraph {
+    padding-left: 2em;
+    padding-top: 1em;
+  }
+  .contact-form > form {
+    padding-left: 2em;
+  }
+  /* contact-section media query ends here */
 }
