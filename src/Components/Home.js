@@ -3,7 +3,6 @@ import About from "./About";
 import Services from "./Services";
 import Mediagallery from "./Mediagallery";
 import Contact from "./Contact";
-// import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (

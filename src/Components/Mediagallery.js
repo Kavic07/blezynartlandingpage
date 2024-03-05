@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
-// import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Mediagallery = () => {
   return (
@@ -69,9 +68,6 @@ const Mediagallery = () => {
               <Link to="https://www.instagram.com/blezyn.art" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="media-icon" />
               </Link>
-              {/* <Link to="mailto:kavicblessing@gmail" target="_blank">
-                <FontAwesomeIcon icon={faEnvelope} className="media-icon" />
-              </Link> */}
             </span>
           </p>
         </div>
