@@ -6,6 +6,7 @@ const Services = () => {
       <div className="service-section">
         <div className="service-content">
           <h3>Experience the Magic of Art</h3>
+
           <p>
             Our artwork is not just beautiful, it is a representation of our
             passion for art. Our products are designed to bring life and magic
