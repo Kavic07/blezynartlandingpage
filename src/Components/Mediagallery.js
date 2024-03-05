@@ -23,6 +23,7 @@ const Mediagallery = () => {
               />
             </Link>
             <h5>Entangled</h5>
+            <p>"30.5 x 20.5"cm</p>
             <p>N88.00</p>
           </div>
 
@@ -35,7 +36,8 @@ const Mediagallery = () => {
               />
             </Link>
             <h5>Hidden</h5>
-            <p>$111.000</p>
+            <p>"53 x 42"cm</p>
+            <p>$107.000</p>
           </div>
 
           <div id="sale-img">
@@ -47,6 +49,7 @@ const Mediagallery = () => {
               />
             </Link>
             <h5>My Skin is not a Crime</h5>
+            <p>"50 x 40.5"cm</p>
             <p>$84.00</p>
           </div>
         </div>
@@ -66,9 +69,9 @@ const Mediagallery = () => {
               <Link to="https://www.instagram.com/blezyn.art" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="media-icon" />
               </Link>
-              <Link to="mailto:kavicblessing@gmail" target="_blank">
+              {/* <Link to="mailto:kavicblessing@gmail" target="_blank">
                 <FontAwesomeIcon icon={faEnvelope} className="media-icon" />
-              </Link>
+              </Link> */}
             </span>
           </p>
         </div>
