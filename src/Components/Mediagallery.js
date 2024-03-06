@@ -23,7 +23,7 @@ const Mediagallery = () => {
             </Link>
             <h5>Entangled</h5>
             <p>"30.5 x 20.5"cm</p>
-            <p>N88.00</p>
+            <p>$88.00</p>
           </div>
 
           <div id="sale-img">
