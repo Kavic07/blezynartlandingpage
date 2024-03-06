@@ -89,7 +89,7 @@ nav > .wrapper > ul > li > a:hover {
 
 /* the hero-section starts here */
 .hero-section {
-  background-image: url("../public/images/hero-pic4.avif");
+  background-image: url("../public/images/herobg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;

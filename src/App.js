@@ -19,7 +19,7 @@ function App() {
           <Route path="/services" element={<Services />}></Route>
           <Route path="/mediagallery" element={<Mediagallery />}></Route>
           <Route path="/mediagallery2" element={<Mediagallery2 />}></Route>
-          <Route path="/Contactpractices" element={<Contact />}></Route>
+          <Route path="/Contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
     </>
