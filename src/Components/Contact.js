@@ -15,7 +15,7 @@ const Contact = () => {
             <p>
               I love to hear from my fellow art lovers!<br></br>
               Drop me a message and I will get back to in no time.<br></br>
-              <Link to="https://wa.me/message/+2347068158635" target="_blank">
+              <Link to="http://wa.me/2347068158635" target="_blank">
                 <img src="./images/wtsup.png" alt="whatsapp-icon" />
               </Link>
             </p>
