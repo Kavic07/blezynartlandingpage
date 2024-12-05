@@ -20,9 +20,7 @@ const Home = () => {
           into the artistic process, learn about upcoming events,<br></br> and
           be the first to discover new additions to our gallery.
         </p>
-        <a href="https://wa.me/message/5E5B6OUQI55UG1">
-          Join our Artistic Community
-        </a>
+        <a href="http://wa.me/2347068158635">Join our Artistic Community</a>
       </div>
       <About />
       <Services />
